@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Angular App</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.js"></script>
+</head>
+
+<body ng-app="app">
+  <div ng-controller="CaclController">
+    <p>
+      <span ng-bind="firstOperand"></span>
+      <span ng-bind="operator"></span>
+      <span ng-bind="secondOperand"></span>
+    </p>
+    <p ng-bind="result"></p>
+    <input type="button" ng-click="setOperand('1')" value="1">
+    <input type="button" ng-click="setOperand('2')" value="2">
+    <input type="button" ng-click="setOperand('3')" value="3">
+    <input type="button" ng-click="setOperand('4')" value="4">
+    <input type="button" ng-click="setOperand('5')" value="5">
+    <input type="button" ng-click="setOperand('6')" value="6">
+    <input type="button" ng-click="setOperand('7')" value="7">
+    <input type="button" ng-click="setOperand('8')" value="8">
+    <input type="button" ng-click="setOperand('9')" value="9">
+    <input type="button" ng-click="setOperand('0')" value="0">
+    <input type="button" ng-click="calculate('+')" value="+">
+    <input type="button" ng-click="calculate('-')" value="-">
+    <input type="button" ng-click="calculate('/')" value="/">
+    <input type="button" ng-click="calculate('*')" value="*">
+    <input type="button" ng-click="calculate('^2')" value="^2">
+    <input type="button" ng-click="calculate('=')" value="=">
+    <input type="button" ng-click="clear()" value="clear">
+  </div>
+  <script src="module.js"></script>
+  <script src="calc-controller.js"></script>
+</body>
+
+</html>
